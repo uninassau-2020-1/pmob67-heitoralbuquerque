@@ -33,7 +33,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put("Senha", senha);
         long ins = db.insert("Usuario", null, contentValues);
 
-        if(ins ==- 1){
+        if(ins == -1){
             return false;
         }
         else {
